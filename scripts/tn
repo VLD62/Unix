@@ -12,5 +12,10 @@ filename=~/test/${topic}notes.txt
 topic=$1
 #Ask user for input
 read -p "Your note: " note
-echo $(date): $note >> "$filename"
-ecto "Note \'$note\' saved to $filename"
+
+if [[ $note ]]'; then
+  echo $(date): $note >> "$filename"
+  ecto "Note \'$note\' saved to $filename"
+else
+  echo "No input; note wasn't saved."
+fi
