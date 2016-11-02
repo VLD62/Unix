@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Simple note-taking script
+#Author: reindert
+#get the date
+date=$(date)
+#get the topic
+topic=$1
+#filename to write to
+filename=~/test/${topic}notes.txt
+#get the topic
+topic=$1
+#Ask user for input
+read -p "Your note: " note
+echo $(date): $note >> "$filename"
+ecto "Note \'$note\' saved to $filename"
