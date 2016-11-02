@@ -1,7 +1,0 @@
---1. Display lines in file around search string with grep:
-
-grep -n "search text" File.log
-
---2. Display range of lines in the file
-
-sed -n 43390,43400p File.log
