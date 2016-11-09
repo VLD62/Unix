@@ -1,0 +1,4 @@
+#/!bin/bash/
+
+#find and copy files with extension:
+find /usr/share/doc -name '*.pdf' -exec cp {} . \;
